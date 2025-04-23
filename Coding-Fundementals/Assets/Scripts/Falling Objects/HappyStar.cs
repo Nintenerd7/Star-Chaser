@@ -8,8 +8,8 @@ public class HappyStar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float x = Random.Range(-6, 6);//randomized x positions
-        tr.position = new Vector2(x, 8f);//position of falling
+        float X = Random.Range(-6, 6);
+        tr.position = new Vector2(X, 8f);//position of falling
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
