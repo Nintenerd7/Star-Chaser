@@ -25,8 +25,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983040027748338828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.0060903737}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.00000023842, z: -0.0060903737}
+  m_LocalScale: {x: 0.17799, y: 0.17799, z: 0.17799}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4861634825632205691}
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1c7fe8da3d7d4e64ba092edc4c1f09fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,8 +97,8 @@ GameObject:
   - component: {fileID: 6169160646385493161}
   - component: {fileID: 5575140319832106960}
   m_Layer: 0
-  m_Name: Happy Star
-  m_TagString: '"Bomb"'
+  m_Name: Bomb
+  m_TagString: Bomb
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
