@@ -59,6 +59,8 @@ public class Hearts : MonoBehaviour
         {
             //SceneManager.LoadScene(2);
             HeartHealth = 3;
+            points.ScoreCount = 0;
+            points.ScoreText.text = "0";
            // Collect.ResetShards();
         }
     }

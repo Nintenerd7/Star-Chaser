@@ -8,10 +8,20 @@ public class Score : MonoBehaviour
 {
     public int ScoreCount;
     public TMP_Text ScoreText;
+    public Hearts die;
     // Start is called before the first frame update
     public void AddScore(int score)
     {
-        ScoreCount += score;
-        ScoreText.text = ScoreCount.ToString();
+
+        if (die.HeartHealth == 0) 
+        {
+            ScoreCount = 0;
+        }
+        else
+        {
+            ScoreCount += score;
+            ScoreText.text = ScoreCount.ToString();
+        }
+
     }
 }
