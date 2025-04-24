@@ -71,7 +71,7 @@ public class Hearts : MonoBehaviour
         {
             TakeHeart();
         }
-        else
+        else if(collision.tag == "Star")
         {
             points.AddScore(10);
         }
