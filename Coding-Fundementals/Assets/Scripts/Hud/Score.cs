@@ -13,15 +13,9 @@ public class Score : MonoBehaviour
     public void AddScore(int score)
     {
 
-        if (die.HeartHealth == 0) 
-        {
-            ScoreCount = 0;
-        }
-        else
-        {
+
             ScoreCount += score;
             ScoreText.text = ScoreCount.ToString();
-        }
 
     }
 }

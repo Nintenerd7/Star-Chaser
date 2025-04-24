@@ -15,6 +15,7 @@ public class Hearts : MonoBehaviour
     public Sprite Full;
     public Sprite Empty;
     public Score points;
+    public GameOver end;
     //
     // Update is called once per frame
     void Update()
@@ -57,11 +58,10 @@ public class Hearts : MonoBehaviour
 
         if (HeartHealth == 0)
         {
-            //SceneManager.LoadScene(2);
             HeartHealth = 3;
             points.ScoreCount = 0;
             points.ScoreText.text = "0";
-           // Collect.ResetShards();
+            end.Dead();
         }
     }
 
