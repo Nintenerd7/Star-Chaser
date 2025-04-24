@@ -59,8 +59,7 @@ public class Hearts : MonoBehaviour
         if (HeartHealth == 0)
         {
             HeartHealth = 3;
-            points.ScoreCount = 0;
-            points.ScoreText.text = "0";
+            end.HighscoreText.text = points.ScoreCount.ToString();
             end.Dead();
         }
     }
