@@ -14,6 +14,7 @@ public class Hearts : MonoBehaviour
     public Image[] hearts;
     public Sprite Full;
     public Sprite Empty;
+    public Score points;
     //
     // Update is called once per frame
     void Update()
@@ -67,6 +68,10 @@ public class Hearts : MonoBehaviour
         if (collision.tag == "Bomb")
         {
             TakeHeart();
+        }
+        else
+        {
+            points.AddScore(10);
         }
     }
 }
