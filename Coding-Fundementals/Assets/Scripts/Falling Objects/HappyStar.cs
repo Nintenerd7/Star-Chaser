@@ -16,6 +16,7 @@ public class HappyStar : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
+            AudioSourceController.Instance.PlaySFX("Twinkle");
             Destroy(gameObject);
         }
         else

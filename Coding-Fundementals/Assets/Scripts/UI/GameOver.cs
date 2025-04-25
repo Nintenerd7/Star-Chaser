@@ -24,6 +24,7 @@ public class GameOver : MonoBehaviour
 
     public void Dead()
     {
+        AudioSourceController.Instance.PlaySFX("GameOver");
         IsDead = true;
         GameOverScreen.SetActive(true);
 
@@ -33,6 +34,6 @@ public class GameOver : MonoBehaviour
         points.ScoreCount = 0;
         points.ScoreText.text = "0";
         IsDead = false;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }

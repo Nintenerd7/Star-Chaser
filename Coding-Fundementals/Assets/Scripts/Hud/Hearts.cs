@@ -54,7 +54,7 @@ public class Hearts : MonoBehaviour
     {
         HeartHealth--;
         hearts[i].sprite = Empty;
-        //AudioSourceController.Instance.PlaySFX("Player_Hit");
+        AudioSourceController.Instance.PlaySFX("Explosion");
 
         if (HeartHealth == 0)
         {
