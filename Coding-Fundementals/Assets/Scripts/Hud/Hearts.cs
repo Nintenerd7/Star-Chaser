@@ -72,7 +72,7 @@ public class Hearts : MonoBehaviour
         }
         else if(collision.tag == "Star")
         {
-            points.AddScore(10);
+            points.ScoreModifier();
         }
     }
 }
