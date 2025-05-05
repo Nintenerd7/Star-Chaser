@@ -17,6 +17,7 @@ public class Score : MonoBehaviour
     bool ScoreMore;//stores score check parameter
     public ScoreMode Score_Mode;//States that change the score points from normal to fever 
     public static bool isInvinsible;//Checks if the player is invinsible in the hearts system script
+    public Animator anim;
 
     private void Start()
     {
@@ -59,6 +60,7 @@ public class Score : MonoBehaviour
     // fever Timer enumerator 
     public IEnumerator Fever_Timer()
     {
+        anim.SetBool("Rainbow", true);
         AudioSourceController.Instance.PlaySFX("Fever");//Plays fever SFX
         feverAlertPlaceholder.SetActive(true);//set active to true
         Points_Collected = 10;//max points collected are equal to 10
@@ -66,6 +68,7 @@ public class Score : MonoBehaviour
         feverAlertPlaceholder.SetActive(false);//set active to false
         Points_Collected = 0;//Points reset to zero
         Score_Mode = ScoreMode.normal;//states return to normal
+        anim.SetBool("Rainbow", false);
         yield break;//ends couroutine 
     }
 
