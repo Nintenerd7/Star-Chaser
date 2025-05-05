@@ -52,10 +52,19 @@ public class Hearts : MonoBehaviour
 
     public void TakeHeart()
     {
-        HeartHealth--;
-        hearts[i].sprite = Empty;
-        AudioSourceController.Instance.PlaySFX("Explosion");
+        switch (Score.isInvinsible)
+        {
+            case true:
+                AudioSourceController.Instance.PlaySFX("Explosion");
+                break;
+            case false:
+                HeartHealth--;
+                hearts[i].sprite = Empty;
+                AudioSourceController.Instance.PlaySFX("Explosion");
+                break;
+        }
 
+        //IF PLAYER DIES 
         if (HeartHealth == 0)
         {
             HeartHealth = 3;

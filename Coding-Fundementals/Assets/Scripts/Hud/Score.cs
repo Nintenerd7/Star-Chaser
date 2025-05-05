@@ -16,6 +16,7 @@ public class Score : MonoBehaviour
     public int Points_Collected;//math modifier for fever mode 
     bool ScoreMore;//stores score check parameter
     public ScoreMode Score_Mode;//States that change the score points from normal to fever 
+    public static bool isInvinsible;//Checks if the player is invinsible in the hearts system script
 
     private void Start()
     {
@@ -25,17 +26,20 @@ public class Score : MonoBehaviour
     public void ScoreModifier()
     {
         //STATE MODIFIER 
-        switch (Score_Mode)
+        switch (Score_Mode)//switch statement handles when state machines are switched 
         {
             case ScoreMode.normal://Normal State handles the normal score system for the game
                 AddScore(10);//10 score points get added to UI 
+                isInvinsible = false;//player is not invinsible 
                 break;
 
             case ScoreMode.fever://Fever State handles the bonus mode for the game 
                 AddScore(20);//Score points get doubled to 20
                 StartCoroutine(Fever_Timer());//start the fever timer for 7 seconds 
-                break;
+                isInvinsible = true;//player is invinsible 
+                break;//ends sequence 
         }
+
         Score_Mode = ScoreMode.normal;//score state is set to normal 
 
         if (Points_Collected == 10)//if points collected is equal to ten 
