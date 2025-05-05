@@ -59,7 +59,7 @@ public class Score : MonoBehaviour
     // fever Timer enumerator 
     public IEnumerator Fever_Timer()
     {
-        Debug.Log("FEVER");//print out in console 
+        AudioSourceController.Instance.PlaySFX("Fever");//Plays fever SFX
         feverAlertPlaceholder.SetActive(true);//set active to true
         Points_Collected = 10;//max points collected are equal to 10
         yield return new WaitForSeconds(7f);//Wait for 7 seconds 

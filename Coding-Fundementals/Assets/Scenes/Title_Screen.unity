@@ -2519,6 +2519,8 @@ MonoBehaviour:
     SoundClip: {fileID: 8300000, guid: 71840703aefa1a44fbb80d38b09375bf, type: 3}
   - Sound_Name: GameOver
     SoundClip: {fileID: 8300000, guid: 45920b67ee7209c46baadaa5b0165344, type: 3}
+  - Sound_Name: Fever
+    SoundClip: {fileID: 8300000, guid: d870952f431c12d4da86ffdef030058c, type: 3}
   Music_Src: {fileID: 277356407}
   SFX_Src: {fileID: 1327072773}
 --- !u!4 &1596621984
