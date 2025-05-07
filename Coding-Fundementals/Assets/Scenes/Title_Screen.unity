@@ -718,7 +718,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3190,7 +3190,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f156c08880078b4fbfdf66b6d6eea91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MusicLable: []
+  MusicLable:
+  - Sound_Name: Title
+    SoundClip: {fileID: 8300000, guid: c9fcfaefdd72578469beb90dbefe232e, type: 3}
   SFXLable:
   - Sound_Name: Twinkle
     SoundClip: {fileID: 8300000, guid: 3745ecd95b64bd649ac150c6f9b90d9d, type: 3}
