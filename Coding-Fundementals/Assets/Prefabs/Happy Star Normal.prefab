@@ -204,3 +204,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tr: {fileID: 4861634825632205691}
+  Explosion: {fileID: 6206239666976645212, guid: 9ebdb29d7dec09d40930fe289b57f803, type: 3}

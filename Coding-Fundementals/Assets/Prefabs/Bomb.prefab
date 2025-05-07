@@ -177,6 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tr: {fileID: 4861634825632205691}
+  Explosion: {fileID: 5790563281691157446, guid: 77ff3607739922f4da3b6b771cdebfeb, type: 3}
 --- !u!50 &5575140319832106960
 Rigidbody2D:
   serializedVersion: 4

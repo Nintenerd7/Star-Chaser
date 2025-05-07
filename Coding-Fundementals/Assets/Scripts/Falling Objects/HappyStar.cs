@@ -5,6 +5,7 @@ using UnityEngine;
 public class HappyStar : MonoBehaviour
 {
     public Transform tr;
+    public GameObject Explosion;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,7 @@ public class HappyStar : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            AudioSourceController.Instance.PlaySFX("Twinkle");
+            Instantiate(Explosion, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
         else

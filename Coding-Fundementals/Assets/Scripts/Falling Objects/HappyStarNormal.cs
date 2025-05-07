@@ -5,6 +5,7 @@ using UnityEngine;
 public class HappyStarNormal : MonoBehaviour
 {
     public Transform tr;
+    public GameObject Explosion;
     // Start is called before the first frame update
     void Start()
     {
